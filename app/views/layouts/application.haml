@@ -1,0 +1,9 @@
+!!! Strict
+%html{:lang => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head= partial 'layouts/head'
+  %body
+    #container
+      #header= partial 'layouts/header'
+      #wrapper.wat-cf
+        #main= yield
+        #sidebar= partial 'layouts/sidebar'

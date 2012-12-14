@@ -1,0 +1,31 @@
+.block
+  %h3 What's this?
+  .content
+    %p The Elegant Ruby Web Framework
+.block.notice
+  %h4 Preface
+  %p Padrino is a ruby framework built upon the Sinatra web library. Sinatra is a DSL for creating simple web applications in Ruby. Padrino was created to make it fun and easy to code more advanced web applications while still adhering to the spirit that makes Sinatra great!
+.block
+  %h3 Social advertisement
+  %ul.navigation
+    %li
+      %a{:href => "#{ENV['TWITTER']}"} Twitter
+    %li
+      %a{:href => "#{ENV['FACEBOOK']}"} Facebook
+    %li
+      %a{:href => "#{ENV['GOOGLE_PLUS']}"} Google+
+.block
+  .sidebar-block
+    %h4 About this site
+    %p
+      Made by 
+      %a{:href => ENV['ABOUT_ME']} zhangjingqiang
+      %br
+      Based on 
+      %a{:href => "http://pilu.github.com/web-app-theme"} Web App Theme
+      %br
+      Hosted on 
+      %a{:href => "http://www.heroku.com"} Heroku
+      %br
+      Powered by 
+      %a{:href => "http://www.padrinorb.com/"} Padrino

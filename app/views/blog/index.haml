@@ -1,0 +1,23 @@
+.secondary-navigation
+  %ul.wat-cf
+    %li.active.first
+      %a{:href => "#block-text"} Blog
+#block-text.block
+  .content
+    - @rss.items.each do |item|
+      %h2.title 
+        = link_to item.title, item.link
+      .inner
+        %p.first
+          = item.description
+        %p
+          %span.gray 
+            = item.pubDate.strftime("%Y/%m/%d %H:%M:%S")
+    .inner
+      .flash
+        .message
+          - type = ['error','warning','notice']
+          %div(class='#{type.sample}')
+            %p
+              = link_to 'TOP', '#container'
+#footer= partial 'layouts/footer'
